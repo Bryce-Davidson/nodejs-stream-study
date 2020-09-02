@@ -21,7 +21,7 @@ const flow = new stream.Readable({
     objectMode: true,
     read() {}
 })
-const listener = fs.createWriteStream('./thing.txt');
+const listener = fs.createWriteStream('./destination.txt');
 
 var i = 0;
 var start = new Date();
