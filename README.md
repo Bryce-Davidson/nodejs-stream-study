@@ -10,7 +10,7 @@ Readable, Writable, Duplex, and Transform streams.
 
 ## File structure
 
-The files included each serve thier own study purpose. At the top of each file includes running and observation instructions in order to learn about the effects and lifecycles of nodejs streams.
+The files included each serve thier own study purpose. The top of each file includes code running and observation instructions in order to learn about the effects and lifecycles of nodejs streams.
 
 ## References
 
