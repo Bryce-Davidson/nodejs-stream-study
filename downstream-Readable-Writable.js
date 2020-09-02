@@ -24,10 +24,11 @@ const flow = new stream.Readable({
 const listener = fs.createWriteStream('./thing.txt');
 
 var i = 0;
+var start = new Date();
 const id = setInterval(() => {
     i++;
     if(i<=3)
-        flow.push(`I am chunk number ${i} just pushed onto the stream`)
+        flow.push(`I am chunk number ${i} just pushed onto the stream at: ${new Date() - start} ms after flow.on('data') has been called`)
     else {
         flow.push(null)
     }
@@ -47,5 +48,11 @@ flow.on('data', chunk => {
 console.log("Flowing: ", flow.readableFlowing);
 
 flow.on('end', chunk => {
-    console.log('All data has been pushed onto the stream')
+    console.log('Reader: All data has been pushed onto the stream.')
+    // Let the listener know that we are done.
+    listener.close();
+})
+
+listener.on('close', chunk => {
+    console.log("Listener: The reader has pushed all the data onto the stream and has let me know.")
 })
