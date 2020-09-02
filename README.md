@@ -8,6 +8,10 @@ Readable, Writable, Duplex, and Transform streams.
 - A **duplex streams** is both *Readable and Writable*. An example of that is a TCP socket.
 - A **transform stream** is basically a **duplex** stream that can be `used to modify or transform` the data as it is written and read. An example of that is the zlib.createGzip stream to compress the data using gzip. You can think of a transform stream **as a function where the input is the writable stream part and the output is readable stream part**. You might also hear transform streams referred to as *“through streams.”*
 
+## File structure
+
+The files included each serve thier own study purpose. At the top of each file includes running and observation instructions in order to learn about the effects and lifecycles of nodejs streams.
+
 ## References
 
 [Nodejs Documentation](https://www.notion.so/Learn-about-nodejs-streams-f16424da12474be988afe2dc45934b30#1d8732a1812f43cbad12222cd9685dd6)

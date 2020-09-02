@@ -1,3 +1,13 @@
+/**
+ * Readable.js
+ * 
+ * Running Instructions: Debug
+ *      Run this code with a debugger putting breakpoints on EVERY line
+ *      attempt to guess what the output on each line will be.
+ * 
+ * hint: keep an i out inside the interval when i = 8
+ */
+
 const stream = require('stream');
 
 const st = stream.Readable({
@@ -10,9 +20,9 @@ console.log(st.readableFlowing) // >>> null
 const id = setInterval(() => {
     i++;
     if(i===4)
-        st.pause(); // stream has paused
+        st.pause(); 
     if(i===8)
-        // The resume will have to wait until the interval is cleared
+        // The resume will have to wait until the interval is cleared? How come?
         st.resume();
     console.log("isFlowing: ", st.readableFlowing, "i: ", i)
     if(i<=8) {
@@ -25,8 +35,6 @@ const id = setInterval(() => {
         clearInterval(id);
 }, 1500);
 
-// Create the data flow and print the chunks in
-// the body of the callback function
 st.on('data', chunk => {
     console.log(chunk)
 })
