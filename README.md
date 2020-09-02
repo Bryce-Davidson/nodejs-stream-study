@@ -19,3 +19,5 @@ The files included each serve thier own study purpose. At the top of each file i
 [Free Code Camp](https://www.notion.so/Learn-about-nodejs-streams-f16424da12474be988afe2dc45934b30#aab12fd4ab6047e28cffcab12206f4f3)
 
 [Transform Streams](https://www.notion.so/Learn-about-nodejs-streams-f16424da12474be988afe2dc45934b30#b7023a0b6d6e4378b34fd26dab6b1e0e)
+
+[Understanding Streams in Nodejs](https://nodesource.com/blog/understanding-streams-in-nodejs/)

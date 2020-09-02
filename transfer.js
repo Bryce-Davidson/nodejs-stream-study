@@ -13,7 +13,4 @@ console.log(src.path);
 // Hook into stream events
 src.on('data', (chunk) => {
     console.log(chunk.toString())
-    // src.pause();
 })
-
-// src.pipe(end)
