@@ -5,12 +5,12 @@
  *      Run this code with `node downstream-Readable-Writable.js`
  * 
  *      This code is meant to display how a readable stream will
- *      begin flowing when the .pipe() function is called
- *      as well as the readable.on('data', chunk...) commmand is called.
+ *      begin flowing when the .pipe() function is called or 
+ *      when the readable.on('data', chunk...) commmand is called.
  * 
  *      Observe how a readable stream can be flowing into a writable stream
- *      and we are able to push data onto the stream in order to have it
- *      flow down into the writable stream.
+ *      and we are able to push data onto the readable stream as long as it is flowing
+ *      in order to have it end up into the writable stream.
  * 
  */
 
@@ -29,17 +29,17 @@ const id = setInterval(() => {
     i++;
     if(i<=3)
         flow.push(`I am chunk number ${i} just pushed onto the stream at: ${new Date() - start} ms after flow.on('data') has been called`)
-    else {
+    else 
         flow.push(null)
-    }
     console.log("Still flowing: ", flow.readableFlowing);
     if(i==10)
         clearInterval(id);
 }, 1000);
 
+
 console.log("Flowing: ", flow.readableFlowing);
 
-console.log("flow.on('data') has been called")
+console.log("flow.on('data') has been called starting the flow of data from the readable stream")
 flow.on('data', chunk => {
     console.log(chunk)
     listener.write(chunk + "\n")
