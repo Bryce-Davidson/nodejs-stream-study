@@ -14,10 +14,10 @@ The files included each serve thier own study purpose. The top of each file incl
 
 ## References
 
-[Nodejs Documentation](https://www.notion.so/Learn-about-nodejs-streams-f16424da12474be988afe2dc45934b30#1d8732a1812f43cbad12222cd9685dd6)
+[Nodejs Documentation](https://nodejs.org/api/stream.html)
 
-[Free Code Camp](https://www.notion.so/Learn-about-nodejs-streams-f16424da12474be988afe2dc45934b30#aab12fd4ab6047e28cffcab12206f4f3)
+[Free Code Camp](https://www.freecodecamp.org/news/node-js-streams-everything-you-need-to-know-c9141306be93/)
 
-[Transform Streams](https://www.notion.so/Learn-about-nodejs-streams-f16424da12474be988afe2dc45934b30#b7023a0b6d6e4378b34fd26dab6b1e0e)
+[Transform Streams](http://codewinds.com/blog/2013-08-20-nodejs-transform-streams.html)
 
-[Understanding Streams in Nodejs](https://nodesource.com/blog/understanding-streams-in-nodejs/)
+[Understanding Streams in Nodejs](https://nodesource.com/blog/understanding-streams-in-nodejs)
